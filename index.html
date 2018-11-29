@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<title>หน้าหลักผู้ขนส่ง</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="assets/dvcomplaint/main.css">
+
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+A:link	{
+text-decoration:none;
+}
+A:visited	{
+text-decoration:none;
+}
+</style>
+<body class="w3-light-grey">
+
+<!-- Page Container -->
+<div class="w3-content w3-margin-top" style="max-width:1400px;">
+
+  <header class="w3-display-container w3-grayscal" id="home">
+    <div class="w3-white w3-text-grey">
+      <div class="container">
+            <div class="w3-col m3 w3-padding-large">
+                <img src="assets/driverhome/images/driver.png" class="w3-image"style="width:100%" alt="Avatar">
+            </div>
+            <div class="w3-col m9 w3-padding-large">
+                <p><i class="fa fa-id-card fa-fw w3-margin-right w3-large w3-text-teal"></i>ID : DV00012</p>
+                <p><i class="fa fa-user-circle fa-fw w3-margin-right w3-large w3-text-teal"></i>นายจิรกิตติ์ ถาวรวงศ์</p>
+                <p><i class="fa fa-check-circle fa-fw w3-margin-right w3-large w3-text-teal"></i>ตรวจเอกสารเรียบร้อยแล้ว
+                <a href="dvedit.html"><i>แก้ไขข้อมูล</i></a></p>
+                <p>คะแนนความนิยม
+                <i class="fa fa-star fa-fw w3-margin-right w3-large w3-text-teal"></i>
+                <i class="fa fa-star fa-fw w3-margin-right w3-large w3-text-teal"></i>
+                <i class="fa fa-star fa-fw w3-margin-right w3-large w3-text-teal"></i>
+                <i class="fa fa-star-half-full fa-fw w3-margin-right w3-large w3-text-teal"></i>
+                <i class="fa fa-star-o fa-fw w3-margin-right w3-large w3-text-teal"></i></p>
+            </div>
+        </div>
+    </div>
+  </header>
+
+    
+      <div class="w3-container w3-white w3-margin-bottom">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-motorcycle fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>แจ้งปัญหาการจัดส่ง</h2>
+        
+        <div class="w3-container">
+                <div class="form-style-5">
+                        <form>
+                        <fieldset>
+                        <legend><span class="number">1</span> ข้อมูลการจัดส่ง</legend> <!--ดึงข้อมูลผู้ส่งของรายนั้น-->
+                        <input type="text" name="field1" placeholder="OD00005"> 
+                        <input type="text" name="field2" placeholder="Kawinna">
+                        <input type="text" name="field3" placeholder="5.2 กิโลเมตร">
+                        </fieldset>
+                        <fieldset>
+                        <legend><span class="number">2</span> ข้อมูลปัญหา</legend>
+                            <select id="complaint" name="field4">
+                            <optgroup label="complaint">
+                                <option value="weight">น้ำหนักสิ่งของเกินที่กำหนดไว้</option>
+                                <option value="sender">ติดต่อผู้ส่งของไม่ได้</option>
+                                <option value="recive">ติดต่อผู้รับไม่ได้</option>
+                            </select>      
+                        <legend><span class="number">3</span> อื่นๆ เพิ่มเติม</legend>
+                        <textarea name="field4" placeholder="อื่นๆ"></textarea>
+                        </fieldset>
+                        <input type="submit" value="submit"  onclick="myFunction()"/>
+                        </form>
+                        </div>
+    </div>
+    <!-- End Right Column -->
+    </div>
+    
+  <!-- End Grid -->
+  </div>
+  
+  <!-- End Page Container -->
+</div>
+<script>
+    function myFunction() {
+        alert("ระบบทำการบันทึกข้อร้องเรียนของคุณแล้ว ขอบคุณสำหรับการแจ้งปัญหา");
+        window.location.href = "https://kawinna.github.io/driverhome/index.html";
+    }
+</script>
+</body>
+</html>
